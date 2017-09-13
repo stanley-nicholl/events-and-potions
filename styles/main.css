@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Princess+Sofia');
+
+html {
+  color: white;
+  font-size: 18px;
+}
+
+body {
+  background: white url('../assets/hypnotize.png');
+}
+
+.main {
+  background: #2D2D2D;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+
+.main h1 {
+  color: white;
+  font-family: 'Princess Sofia', cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.menu {
+  margin: 2rem 0;
+}
+
+.selected-items {
+  margin-bottom: 2rem;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  color: #FEFEFE;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.fa {
+  background: #FEFEFE;
+  border-radius: 50%;
+  margin-right: 0.2rem;
+  padding: 0.3rem;
+}
+
+.fa-pagelines {
+  color: #65743A;
+}
+
+.fa-flask {
+  color: #394F49;
+}
+
+.fa-bug {
+  color: #330F0A;
+}
