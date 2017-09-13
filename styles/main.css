@@ -9,6 +9,10 @@ body {
   background: white url('../assets/hypnotize.png');
 }
 
+.princess-font {
+  font-family: 'Princess Sofia', cursive;
+}
+
 .main {
   background: #2D2D2D;
   border-radius: 1rem;
@@ -18,7 +22,6 @@ body {
 
 .main h1 {
   color: white;
-  font-family: 'Princess Sofia', cursive;
   font-size: 3rem;
   text-align: center;
 }
@@ -29,6 +32,15 @@ body {
 
 .selected-items {
   margin-bottom: 2rem;
+}
+
+.selected-items {
+  font-weight: bold;
+  text-align: center;
+}
+
+.selected-items span {
+  font-weight: normal;
 }
 
 .menu ul {
@@ -43,19 +55,24 @@ body {
 
 .fa {
   background: #FEFEFE;
+  color: #2D2D2D;
   border-radius: 50%;
   margin-right: 0.2rem;
   padding: 0.3rem;
 }
 
-.fa-pagelines {
+.green {
   color: #65743A;
 }
 
-.fa-flask {
+.blue {
   color: #394F49;
 }
 
-.fa-bug {
+.red {
   color: #330F0A;
+}
+
+.mix-btn {
+  text-transform: uppercase;
 }
