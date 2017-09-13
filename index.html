@@ -1,124 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Events &amp; Potions</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/main.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <div class="main container">
-      <div class="row">
-        <div class="col">
-          <h1 id="title">Choose Your Ingredients</h1>
-        </div>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>Events &amp; Potions</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-      <div class="menu row">
-        <div class="col">
-          <ul class='plants'>
-            <li>
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
-              Snakeweed
-            </li>
-            <li>
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
-              Cypress
-            </li>
-            <li>
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
-              Lavender
-            </li>
-            <li>
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
-              Mandrake
-            </li>
-            <li>
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
-              Datura
-            </li>
-            <li>
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
-              Yarrow Root
-            </li>
-          </ul>
-        </div>
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="scripts/main.js" charset="utf-8"></script>
+</head>
 
-        <div class="col">
-          <ul class='liquids'>
-            <li>
-              <i class="fa fa-flask" aria-hidden="true"></i>
-              Twice Blessed Water
-            </li>
-            <li>
-              <i class="fa fa-flask" aria-hidden="true"></i>
-              Honeywater
-            </li>
-            <li>
-              <i class="fa fa-flask" aria-hidden="true"></i>
-              Leech Juice
-            </li>
-            <li>
-              <i class="fa fa-flask" aria-hidden="true"></i>
-              Syrup of Arnica
-            </li>
-            <li>
-              <i class="fa fa-flask" aria-hidden="true"></i>
-              Morning Dew
-            </li>
-            <li>
-              <i class="fa fa-flask" aria-hidden="true"></i>
-              Wormwood Essence
-            </li>
-          </ul>
-        </div>
-
-        <div class="col">
-          <ul class='animal-parts'>
-            <li>
-              <i class="fa fa-bug" aria-hidden="true"></i>
-              Horned slug
-            </li>
-            <li>
-              <i class="fa fa-bug" aria-hidden="true"></i>
-              Eel Eye
-            </li>
-            <li>
-              <i class="fa fa-bug" aria-hidden="true"></i>
-              Cockroach
-            </li>
-            <li>
-              <i class="fa fa-bug" aria-hidden="true"></i>
-              Cat Hair
-            </li>
-            <li>
-              <i class="fa fa-bug" aria-hidden="true"></i>
-              Crow Feathers
-            </li>
-            <li>
-              <i class="fa fa-bug" aria-hidden="true"></i>
-              Toe of Frog
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="selected-items row justify-content-center">
-        <div class="col-6">
-          <p class="alert alert-info">
-            Selected Items: <span>Nothing is selected yet.</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-6">
-          <button class='mix-btn btn btn-warning btn-block'>Mix</button>
-        </div>
+<body>
+  <div class="main container">
+    <div class="row">
+      <div class="col">
+        <h1 id="title">Choose Your Ingredients</h1>
       </div>
     </div>
-  </body>
+
+    <div class="menu row">
+      <div class="col">
+        <ul class='plants'>
+          <li>
+            <i class="fa fa-pagelines" aria-hidden="true"></i> Snakeweed
+          </li>
+          <li>
+            <i class="fa fa-pagelines" aria-hidden="true"></i> Cypress
+          </li>
+          <li>
+            <i class="fa fa-pagelines" aria-hidden="true"></i> Lavender
+          </li>
+          <li>
+            <i class="fa fa-pagelines" aria-hidden="true"></i> Mandrake
+          </li>
+          <li>
+            <i class="fa fa-pagelines" aria-hidden="true"></i> Datura
+          </li>
+          <li>
+            <i class="fa fa-pagelines" aria-hidden="true"></i> Yarrow Root
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <ul class='liquids'>
+          <li>
+            <i class="fa fa-flask" aria-hidden="true"></i> Twice Blessed Water
+          </li>
+          <li>
+            <i class="fa fa-flask" aria-hidden="true"></i> Honeywater
+          </li>
+          <li>
+            <i class="fa fa-flask" aria-hidden="true"></i> Leech Juice
+          </li>
+          <li>
+            <i class="fa fa-flask" aria-hidden="true"></i> Syrup of Arnica
+          </li>
+          <li>
+            <i class="fa fa-flask" aria-hidden="true"></i> Morning Dew
+          </li>
+          <li>
+            <i class="fa fa-flask" aria-hidden="true"></i> Wormwood Essence
+          </li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <ul class='animal-parts'>
+          <li>
+            <i class="fa fa-bug" aria-hidden="true"></i> Horned slug
+          </li>
+          <li>
+            <i class="fa fa-bug" aria-hidden="true"></i> Eel Eye
+          </li>
+          <li>
+            <i class="fa fa-bug" aria-hidden="true"></i> Cockroach
+          </li>
+          <li>
+            <i class="fa fa-bug" aria-hidden="true"></i> Cat Hair
+          </li>
+          <li>
+            <i class="fa fa-bug" aria-hidden="true"></i> Crow Feathers
+          </li>
+          <li>
+            <i class="fa fa-bug" aria-hidden="true"></i> Toe of Frog
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="selected-items row justify-content-center">
+      <div class="col-6">
+        <p class="alert alert-info">
+          Selected Items: <span>Nothing is selected yet.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-6 mix-section">
+        <button class='mix-btn btn btn-warning btn-block'>Mix</button>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
