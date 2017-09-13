@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background: white url('../assets/hypnotize.png');
+  background: #111111 url('../assets/congruent-outline.png');
 }
 
 .princess-font {
@@ -15,6 +15,7 @@ body {
 
 .main {
   background: #2D2D2D;
+  border: 3px dotted #FEFEFE;
   border-radius: 1rem;
   margin-top: 2rem;
   padding: 3rem;
