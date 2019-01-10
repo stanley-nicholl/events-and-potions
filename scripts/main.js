@@ -25,7 +25,7 @@ title.textContent = 'Choose Your Magical Ingredients'
 // Change the style of the title
 // Overriding styles
 // title.style = 'background-color: purple;'
-title.style = 'color: orange;'
+// title.style = 'color: orange;'
 
 // Setting specific styles
 // title.style.backgroundColor = 'purple'
