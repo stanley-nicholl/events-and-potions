@@ -25,7 +25,7 @@ title.textContent = 'Choose Your Magical Ingredients'
 // Change the style of the title
 // Overriding styles
 // title.style = 'background-color: purple;'
-// title.style = 'color: orange;'
+title.style = 'color: orange;'
 
 // Setting specific styles
 // title.style.backgroundColor = 'purple'
@@ -42,7 +42,7 @@ var allListItems = document.querySelectorAll('li')
 var selectedItemBox = document.querySelector('.alert span')
 var selectedItems = []
 var counter = 0
-var items = ''
+var items =
 
 var lis = document.querySelectorAll('li')
 
@@ -50,38 +50,23 @@ for(var i = 0; i < lis.length; i++){
   var li = lis[i]
   li.addEventListener('click', function(event){
     event.target.className += ' selected'
-    event.target.style.color = 'pink'
     if(selectedItems.length > 4){
       selectedItems.shift()
       selectedItems.push(event.target.innerText)
+      console.log(selectedItems);
     }else{
       selectedItems.push(event.target.innerText)
+      console.log(selectedItems);
     }
-selectedItemBox.textContent = ''
+
     for(let j = 0; j < selectedItems.length; j++){
-      selectedItemBox.textContent += ` ${j+1}) ${selectedItems[j]}`
+      let items
+      selectedItemBox.textContent = ''
+      selectedItemBox.textContent = `, ${selectedItems[j]}`
     }
+
   })
-
 }
-var mixButton = document.querySelector('.mix-btn')
-var mix = function(event){
-  var mixer = document.createElement('h3')
-  mixer.textContent = 'You made a potion!'
-  mixer.style.color = 'white'
-  mixer.style.textAlign = 'center'
-  mixer.style.fontWeight = 'bold'
-  mixer.style.marginTop = '2rem'
-  var mixerSection = document.getElementsByClassName('mix-section')
-  console.log(mixerSection);
-  mixerSection[0].append(mixer)
-  selectedItemBox.textContent = 'Nothing is selected yet'
-  selectedItems = []
-}
-
-mixButton.addEventListener('click', mix)
-
-
 
 
 
